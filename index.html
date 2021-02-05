@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica Krismar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Práctica</h1>
+    <!-- Primer sección -->
+    <section class="grid primer_seccion">
+      <!-- Primer contenedor -->
+      <div class="grid card">
+        <div class="card_image" id="imagen_0"></div>
+        <div
+          class="card_text"
+          ondragover="onDragOver(event)"
+          ondrop="onDrop(event,this)"
+        >
+          <!-- <h3>manzana</h3> -->
+        </div>
+      </div>
+
+      <!-- Termina primer contenedor -->
+
+      <!-- Segundo contenedor -->
+      <div class="grid card">
+        <div class="card_image" id="imagen_1"></div>
+        <div
+          class="card_text"
+          ondragover="onDragOver(event)"
+          ondrop="onDrop(event,this)"
+        >
+          <!-- <h3>pera</h3> -->
+        </div>
+      </div>
+      <!-- Termina segundo contenedor -->
+
+      <!-- Tercer contenedor -->
+      <div class="grid card">
+        <div class="card_image" id="imagen_2"></div>
+        <div
+          class="card_text"
+          ondragover="onDragOver(event)"
+          ondrop="onDrop(event,this)"
+        >
+          <!-- <h3>melón</h3> -->
+        </div>
+      </div>
+      <!-- Termina tercer contenedor -->
+    </section>
+    <!-- Termina primer sección -->
+
+    <!-- Segunda sección -->
+    <section class="grid segunda_seccion">
+      <div class="arrow_left">
+        <i class="fas fa-arrow-circle-left"></i>
+      </div>
+      <div id="card_option_1"></div>
+      <div id="card_option_2"></div>
+      <div id="card_option_3"></div>
+      <div class="arrow_right">
+        <i class="fas fa-arrow-circle-right"></i>
+      </div>
+    </section>
+    <!-- Termina segunda sección -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p>Elige como deseas jugar:</p>
+        <button onclick="jugarPalabras()">Arrastrar palabras</button>
+        <button onclick="jugarImagenes()">Arrastrar imágenes</button>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
